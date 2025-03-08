@@ -1,4 +1,4 @@
-const ditto = require('./pokemon/ditto.json')
+const ditto = require('../Resources/ditto.json')
 const express = require('express')
 
 const PORT = process.env.PORT || 3000

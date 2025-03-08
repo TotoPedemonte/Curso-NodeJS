@@ -1,6 +1,6 @@
 const http = require('node:http')
 
-const json = require('./pokemon/ditto.json')
+const json = require('../Resources/ditto.json')
 
 const proccesRequest = (req, res) => {
   const { method, url } = req
