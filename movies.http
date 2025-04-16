@@ -2,7 +2,7 @@
 GET http://localhost:3000/movies
 
 ### Obtener una película por id
-GET http://localhost:3000/movies/090aa29e-1266-11f0-8be8-421ed0b82baf
+GET http://localhost:3000/movies/d9939a6c-1b15-11f0-8be8-421ed0b82baf
 
 ### Obtener todas las peliculas con un mismo genero
 GET http://localhost:3000/movies?genre=Action
@@ -12,13 +12,24 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-    "title": 1,
-    "year": "carlos",
+  "sql": "SELECT * FROM users",
+  "title": "The Godfather",
+  "year": 1975,
+  "director": "Francis Ford Coppola",
+  "duration": 175,
+  "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+  "genre": [
+    "Crime",
+    "Drama"
+  ]
 }
+
+### Borrar una película
+DELETE http://localhost:3000/movies/2990078a-1b16-11f0-8be8-421ed0b82baf
 
 ### Actualizar una película
 
-PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:3000/movies/d9939a6c-1b15-11f0-8be8-421ed0b82baf
 Content-Type: application/json
 
 {
